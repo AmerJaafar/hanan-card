@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --maincolor: #FF5678;
+    --secondColor: rgb(255, 86, 120);
+    --background-color: #FFB4BF;
+    
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.container {
+    height: 475px;
+    width: 300px;
+    box-shadow: 0 10px 20px var(--maincolor);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image {
+    height: 150px;
+    width: 150px;
+    background: url(../images/WhatsApp\ Image\ 2023-01-29\ at\ 10.46.16\ PM.jpeg) no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    position: relative;
+    top: 150px;
+    margin-left: 150px;
+    box-shadow: 0 2px 15px var(--secondColor);
+    transform: rotate(-20deg);
+    background-position: center;
+}
+
+.shape {
+    height: 250px;
+    width: 400px;
+    background-color: var(--background-color);
+    margin-left: -20px;
+    position: relative;
+    top: -80px;
+    box-shadow: 0 2px 15px var(--maincolor);
+    transform: rotate(25deg);
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.title {
+    color: rgb(105, 100, 109);
+}
+
+p {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: rgb(105, 100, 109);
+}
+
+.icons {
+    margin-top: 15px;
+}
+
+.icons i {
+    margin-left: 10px;
+    font-size: 20px;
+    transition: .3s ease;
+    color: var(--maincolor);
+}
+
+.icons i:hover {
+    transform: scale(1.1);
+    color: crimson;
+    
+}
+
+.portfolio {
+    display: flex;
+    margin: 20px auto 5px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid crimson;
+    font-weight: 500;
+    cursor: pointer;
+    animation: slide-in-left 2s ease-in-out forwards 1s;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.portfolio:hover {
+    background-color: crimson;
+    box-shadow: 0 5px 10px var(--maincolor);
+}
+a:hover {
+    color: aliceblue;
+}
+
+
+
